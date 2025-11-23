@@ -13,7 +13,6 @@ class GetPhotosFromSearchUseCase @Inject constructor(
         page: Int,
         perPage: Int,
     ): PhotosInformation {
-        println("izzz: searching with text ${text} and page ${page} and perPage ${perPage}")
         return flickrRepositoryImpl.getPhotosBySearch(
             searchQuery = text,
             page = page,
